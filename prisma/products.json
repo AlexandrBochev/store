@@ -1,0 +1,38 @@
+[
+  {
+    "name": "avast-garde lamp",
+    "company": "Modenza",
+    "description": "Elegant lighting piece with a bold modern shape, designed to create a warm and inviting glow in any space. Inspired by clean lines and contemporary aesthetics, this lamp fits both minimal and eclectic interiors. Its durable frame and timeless design make it a long-lasting addition, offering comfort and atmosphere for living rooms, studios, or offices alike.",
+    "featured": true,
+    "image": "https://images.pexels.com/photos/943150/pexels-photo-943150.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "price": 100,
+    "clerkId": "clerkId"
+  },
+  {
+    "name": "chic chair",
+    "company": "Luxora",
+    "description": "Refined chair with a graceful silhouette and soft cushions, blending elegance with comfort. Ideal for reading corners, home offices, or stylish dining spaces. Upholstered in quality fabric with attention to detail, the chair balances everyday practicality with a sophisticated touch, bringing comfort and personality to any modern setting where form meets function.",
+    "featured": true,
+    "image": "https://images.pexels.com/photos/5705090/pexels-photo-5705090.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "price": 200,
+    "clerkId": "clerkId"
+  },
+  {
+    "name": "comfy bed",
+    "company": "Homestead",
+    "description": "Spacious bed crafted for restful nights, combining stability with luxurious softness. The sturdy frame ensures durability, while the smooth finish adds a calming aesthetic. Perfect for master bedrooms or guest spaces, this bed provides reliable support and unmatched comfort, turning every night into a rejuvenating experience that blends style and wellness together.",
+    "featured": true,
+    "image": "https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "price": 300,
+    "clerkId": "clerkId"
+  },
+  {
+    "name": "contemporary sofa",
+    "company": "Comfora",
+    "description": "Modern sofa with generous proportions and plush cushions, designed for gathering, lounging, and everyday relaxation. The clean upholstery lines adapt easily to various interior styles, from minimal to industrial. With versatile seating capacity and durable construction, it’s an ideal centerpiece for living areas, offering both elegance and practicality in equal measure.",
+    "featured": false,
+    "image": "https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "price": 400,
+    "clerkId": "clerkId"
+  }
+]
