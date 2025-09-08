@@ -5,6 +5,7 @@ type ProductRatingProps = {
 };
 
 async function ProductRating({ productId }: ProductRatingProps) {
+  console.log(productId);
   const rating = 4.2;
   const count = 25;
 
