@@ -5,11 +5,10 @@ async function ProductsPage({
 }: {
   searchParams: { layout?: string; search?: string };
 }) {
-  const layout = searchParams.layout || 'grid';
-  const search = searchParams.search || '';
+  const { layout, search } = await searchParams;
   return (
     <>
-      <ProductsContainer layout={layout} search={search} />
+      <ProductsContainer layout={layout || 'grid'} search={search || ''} />
     </>
   );
 }
