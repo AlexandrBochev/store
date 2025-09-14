@@ -1,15 +1,31 @@
-import { Button } from '../ui/button';
+"use client";
+import { addToCartAction } from "@/lib/actions";
+import { useAuth } from "@clerk/nextjs";
+import { useState } from "react";
+import { ProductSignInButton, SubmitButton } from "../form/Buttons";
+import FormContainer from "../form/FormContainer";
+import SelectProductAmount, { Mode } from "./SelectProductAmount";
 
-type AddToCartProps = {
-  productId: string;
-};
-
-function AddToCart({ productId }: AddToCartProps) {
-  console.log(productId);
+function AddToCart({ productId }: { productId: string }) {
+  const [amount, setAmount] = useState(1);
+  const { userId } = useAuth();
   return (
-    <Button className='capitalize mt-8' size='lg'>
-      add to cart
-    </Button>
+    <div className="mt-4">
+      <SelectProductAmount
+        mode={Mode.SingleProduct}
+        amount={amount}
+        setAmount={setAmount}
+      />
+      {userId ? (
+        <FormContainer action={addToCartAction}>
+          <input type="hidden" name="productId" value={productId} />
+          <input type="hidden" name="amount" value={amount} />
+          <SubmitButton text="add to cart" size="default" className="mt-8" />
+        </FormContainer>
+      ) : (
+        <ProductSignInButton />
+      )}
+    </div>
   );
 }
 export default AddToCart;
